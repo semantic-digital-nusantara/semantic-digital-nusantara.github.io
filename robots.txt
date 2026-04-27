@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://semantic-digital-nusantara.github.io/sitemap.xml
