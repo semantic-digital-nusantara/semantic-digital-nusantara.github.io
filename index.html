@@ -17,10 +17,22 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": "WebSite",
+          "name": "Semantic Digital Nusantara",
+          "url": "https://semanticdigital.id",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://semanticdigital.id/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
           "name": "Semantic Digital Nusantara",
           "url": "https://semanticdigital.id",
           "logo": "https://semanticdigital.id/logo.png",
+          "priceRange": "$$",
+          "telephone": "+62-896-0101-4551",
           "founder": {
             "@type": "Person",
             "name": "Muhammad Arif Setiawan",
@@ -36,24 +48,45 @@
             "addressLocality": "Bandung",
             "addressCountry": "ID"
           },
-          "service": [
-            {
-              "@type": "Service",
-              "name": "Web Development"
-            },
-            {
-              "@type": "Service",
-              "name": "SaaS Development"
-            },
-            {
-              "@type": "Service",
-              "name": "Mobile App Development"
-            },
-            {
-              "@type": "Service",
-              "name": "Payment Gateway Integration"
-            }
-          ]
+          "areaServed": "ID",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Layanan Pengembangan Perangkat Lunak",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Pengembangan Website & Landing Page",
+                  "description": "Pembuatan website company profile, landing page, dan portal web menggunakan Next.js/React yang cepat dan SEO-friendly."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Integrasi Payment Gateway",
+                  "description": "Integrasi sistem pembayaran yang aman dan handal, mendukung Xendit, Midtrans, Winpay, dan callback webhook otomatis."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Arsitektur Backend Skalabel",
+                  "description": "Pengembangan arsitektur backend yang kokoh untuk menangani trafik tinggi menggunakan Go (Golang) dan Node.js."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Pengembangan Aplikasi Mobile & SaaS",
+                  "description": "Pengembangan aplikasi khusus (SaaS) dan aplikasi mobile untuk CRM, operasional, dan manajemen internal."
+                }
+              }
+            ]
+          }
         },
         {
           "@type": "FAQPage",
